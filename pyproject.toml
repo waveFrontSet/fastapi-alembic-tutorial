@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "fastapi-tutorial"
+version = "0.1.0"
+description = ""
+authors = ["Paul Grillenberger <grillenbergerpaul@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+fastapi = "^0.70.0"
+uvicorn = {extras = ["standard"], version = "^0.15.0"}
+SQLAlchemy = "^1.4.25"
+psycopg2-binary = "^2.9.1"
+alembic = "^1.7.4"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.5"
+pytest-cov = "^3.0.0"
+pytest-sugar = "^0.9.4"
+pytest-factoryboy = "^2.1.0"
+pylint = "^2.11.1"
+mypy = "^0.910"
+black = "^21.9b0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
